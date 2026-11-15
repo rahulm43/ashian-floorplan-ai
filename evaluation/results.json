@@ -1,0 +1,301 @@
+{
+  "total_questions": 22,
+  "correct_answers": 22,
+  "overall_accuracy_percent": 100.0,
+  "category_performance": {
+    "Room Counting": {
+      "total": 3,
+      "correct": 3
+    },
+    "Door Counting": {
+      "total": 3,
+      "correct": 3
+    },
+    "Window Counting": {
+      "total": 2,
+      "correct": 2
+    },
+    "Largest Room Identification": {
+      "total": 2,
+      "correct": 2
+    },
+    "Room Area Retrieval": {
+      "total": 1,
+      "correct": 1
+    },
+    "Missing Information": {
+      "total": 1,
+      "correct": 1
+    },
+    "Average Calculations": {
+      "total": 1,
+      "correct": 1
+    },
+    "Plan Comparisons": {
+      "total": 1,
+      "correct": 1
+    },
+    "Room Connectivity": {
+      "total": 1,
+      "correct": 1
+    },
+    "Invalid Plan IDs": {
+      "total": 2,
+      "correct": 2
+    },
+    "Unsupported Questions": {
+      "total": 5,
+      "correct": 5
+    }
+  },
+  "detailed_results": [
+    {
+      "id": "q_room_count_1",
+      "category": "Room Counting",
+      "question": "How many rooms does plan 1 have?",
+      "expected": 6,
+      "assistant_answer": "Plan 1 contains 6 extracted rooms.",
+      "sql_query": "SELECT COUNT(*) AS room_count FROM rooms WHERE plan_id = ?",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_room_count_10",
+      "category": "Room Counting",
+      "question": "How many rooms does plan 10 have?",
+      "expected": 8,
+      "assistant_answer": "Plan 10 contains 8 extracted rooms.",
+      "sql_query": "SELECT COUNT(*) AS room_count FROM rooms WHERE plan_id = ?",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_room_count_12",
+      "category": "Room Counting",
+      "question": "How many rooms does plan 12 have?",
+      "expected": 8,
+      "assistant_answer": "Plan 12 contains 8 extracted rooms.",
+      "sql_query": "SELECT COUNT(*) AS room_count FROM rooms WHERE plan_id = ?",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_door_count_10",
+      "category": "Door Counting",
+      "question": "How many doors does plan 10 have?",
+      "expected": 9,
+      "assistant_answer": "Plan 10 contains 9 extracted doors.",
+      "sql_query": "SELECT COUNT(*) AS door_count FROM doors WHERE plan_id = ?",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_door_count_12",
+      "category": "Door Counting",
+      "question": "How many doors does plan 12 have?",
+      "expected": 2,
+      "assistant_answer": "Plan 12 contains 2 extracted doors.",
+      "sql_query": "SELECT COUNT(*) AS door_count FROM doors WHERE plan_id = ?",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_door_count_16",
+      "category": "Door Counting",
+      "question": "How many doors does plan 16 have?",
+      "expected": 4,
+      "assistant_answer": "Plan 16 contains 4 extracted doors.",
+      "sql_query": "SELECT COUNT(*) AS door_count FROM doors WHERE plan_id = ?",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_missing_window_4",
+      "category": "Window Counting",
+      "question": "Which room in plan 4 has no windows?",
+      "expected": [
+        "Room 3",
+        "Room 6",
+        "Room 8"
+      ],
+      "assistant_answer": "In plan 4, the following room(s) have no windows: Room 3 (ID 4003), Room 6 (ID 4006), Room 8 (ID 4008).",
+      "sql_query": "SELECT room_id, room_index, category, area_pixels, centroid_x, centroid_y\n        FROM rooms\n        WHERE plan_id = ? AND window_count = 0\n        ORDER BY room_index ASC",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_missing_window_10",
+      "category": "Window Counting",
+      "question": "Which room in plan 10 has no windows?",
+      "expected": [
+        "Room 8"
+      ],
+      "assistant_answer": "In plan 10, the following room(s) have no windows: Room 8 (ID 10008).",
+      "sql_query": "SELECT room_id, room_index, category, area_pixels, centroid_x, centroid_y\n        FROM rooms\n        WHERE plan_id = ? AND window_count = 0\n        ORDER BY room_index ASC",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_largest_room_1",
+      "category": "Largest Room Identification",
+      "question": "What is the largest room in plan 1?",
+      "expected": "Room 5",
+      "assistant_answer": "The largest room in plan 1 is Room 5 (Room ID 1005) with a segmented area of 289,523 pixels.",
+      "sql_query": "SELECT room_id, room_index, category, area_pixels, bbox_x, bbox_y, bbox_width, bbox_height\n        FROM rooms\n        WHERE plan_id = ?\n        ORDER BY area_pixels DESC\n        LIMIT 1",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_largest_room_10",
+      "category": "Largest Room Identification",
+      "question": "What is the largest room in plan 10?",
+      "expected": "Room 5",
+      "assistant_answer": "The largest room in plan 10 is Room 5 (Room ID 10005) with a segmented area of 582,751 pixels.",
+      "sql_query": "SELECT room_id, room_index, category, area_pixels, bbox_x, bbox_y, bbox_width, bbox_height\n        FROM rooms\n        WHERE plan_id = ?\n        ORDER BY area_pixels DESC\n        LIMIT 1",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_room_areas_12",
+      "category": "Room Area Retrieval",
+      "question": "What are the areas of all rooms in plan 12?",
+      "expected": "pixel measurements",
+      "assistant_answer": "Room areas in plan 12 (pixel measurements):\n- Room 1: 283,249 px\n- Room 2: 636,084 px\n- Room 3: 440,589 px\n- Room 4: 18,944 px\n- Room 5: 158,099 px\n- Room 6: 161,872 px\n- Room 7: 137,760 px\n- Room 8: 150,355 px",
+      "sql_query": "SELECT room_id, room_index, category, area_pixels\n        FROM rooms\n        WHERE plan_id = ?\n        ORDER BY room_index ASC",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_unavailable_info_general",
+      "category": "Missing Information",
+      "question": "What information is unavailable in this floor plan?",
+      "expected": "limitations explained",
+      "assistant_answer": "The following information is NOT available in this floor plan dataset:\n1. Physical metric dimensions (e.g. square metres or feet) - only raw pixel dimensions are available.\n2. Specific architectural room semantics (e.g. Master Bedroom vs Kitchen) - labels are based on geometric segmentation.\n3. Wall materials, thicknesses, or structural load specifications.\n4. Ceiling heights, vertical elevations, or 3D volumes.\n5. Electrical, plumbing, and HVAC layouts.\n6. Architect, ownership, and building code compliance metadata.",
+      "sql_query": null,
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_avg_rooms",
+      "category": "Average Calculations",
+      "question": "What is the average number of rooms across all plans?",
+      "expected": 8.02,
+      "assistant_answer": "The average number of rooms across all processed floor plans is 8.02.",
+      "sql_query": "SELECT ROUND(AVG(total_rooms), 2) AS average_rooms FROM plans",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_plans_more_than_15_doors",
+      "category": "Plan Comparisons",
+      "question": "Which plans have more than 15 doors?",
+      "expected": "plans with > 15 doors",
+      "assistant_answer": "Plans with more than 15 doors are: Plan 20 (24 doors), Plan 30 (20 doors), Plan 29 (17 doors), Plan 31 (17 doors), Plan 36 (17 doors), Plan 33 (16 doors).",
+      "sql_query": "SELECT plan_id, COUNT(*) AS door_count\n        FROM doors\n        GROUP BY plan_id\n        HAVING COUNT(*) > ?\n        ORDER BY door_count DESC",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_connections_10",
+      "category": "Room Connectivity",
+      "question": "Which rooms are connected through doors in plan 10?",
+      "expected": "door connections",
+      "assistant_answer": "Room connections in plan 10:\n- Room 10003 <-> Room 10005 (via Door 10002)\n- Room 10002 <-> Room 10005 (via Door 10003)\n- Room 10004 <-> Room 10005 (via Door 10004)\n- Room 10001 <-> Room 10005 (via Door 10005)\n- Room 10004 <-> Room 10005 (via Door 10006)\n- Room 10004 <-> Room 10006 (via Door 10006)\n- Room 10005 <-> Room 10006 (via Door 10006)\n- Room 10005 <-> Room 10008 (via Door 10007)\n- Room 10005 <-> Room 10007 (via Door 10008)",
+      "sql_query": "SELECT connection_id, plan_id, room_a_id, room_b_id, door_id, connection_type\n        FROM room_connections\n        WHERE plan_id = ?\n        ORDER BY connection_id ASC",
+      "is_supported": true,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_invalid_plan_9999",
+      "category": "Invalid Plan IDs",
+      "question": "How many rooms does plan 9999 have?",
+      "expected": "plan not found",
+      "assistant_answer": "Plan 9999 was not found in the database. Available plans include: 1, 2, 3, 4, 10, 12, 13, 14, 15, 16...",
+      "sql_query": "SELECT 1 FROM plans WHERE plan_id = 9999;",
+      "is_supported": false,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_invalid_plan_500",
+      "category": "Invalid Plan IDs",
+      "question": "What is the largest room in plan 500?",
+      "expected": "plan not found",
+      "assistant_answer": "Plan 500 was not found in the database. Available plans include: 1, 2, 3, 4, 10, 12, 13, 14, 15, 16...",
+      "sql_query": "SELECT 1 FROM plans WHERE plan_id = 500;",
+      "is_supported": false,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_unsupported_color",
+      "category": "Unsupported Questions",
+      "question": "What color are the walls painted in plan 12?",
+      "expected": "cannot determine",
+      "assistant_answer": "I cannot determine this from the available floor plan data. Architectural attributes such as 'color', physical metric scale, or finish specifications are not recorded in this segmentation dataset.",
+      "sql_query": null,
+      "is_supported": false,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_unsupported_height",
+      "category": "Unsupported Questions",
+      "question": "What is the ceiling height in plan 1?",
+      "expected": "cannot determine",
+      "assistant_answer": "I cannot determine this from the available floor plan data. Architectural attributes such as 'ceiling', physical metric scale, or finish specifications are not recorded in this segmentation dataset.",
+      "sql_query": null,
+      "is_supported": false,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_unsupported_cost",
+      "category": "Unsupported Questions",
+      "question": "What is the price or construction cost of plan 10?",
+      "expected": "cannot determine",
+      "assistant_answer": "I cannot determine this from the available floor plan data. Architectural attributes such as 'cost', physical metric scale, or finish specifications are not recorded in this segmentation dataset.",
+      "sql_query": null,
+      "is_supported": false,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_unsupported_architect",
+      "category": "Unsupported Questions",
+      "question": "Who is the architect of plan 4?",
+      "expected": "cannot determine",
+      "assistant_answer": "I cannot determine this from the available floor plan data. Architectural attributes such as 'architect', physical metric scale, or finish specifications are not recorded in this segmentation dataset.",
+      "sql_query": null,
+      "is_supported": false,
+      "is_correct": true,
+      "failure_reason": null
+    },
+    {
+      "id": "q_unsupported_sqm",
+      "category": "Unsupported Questions",
+      "question": "What is the room size in square metres for plan 12?",
+      "expected": "cannot determine",
+      "assistant_answer": "I cannot determine this from the available floor plan data.",
+      "sql_query": null,
+      "is_supported": false,
+      "is_correct": true,
+      "failure_reason": null
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+[
+  {
+    "id": "q_room_count_1",
+    "category": "Room Counting",
+    "question": "How many rooms does plan 1 have?",
+    "plan_id": 1,
+    "expected_type": "numeric",
+    "expected_value": 6,
+    "validation_rule": "answer contains '6'"
+  },
+  {
+    "id": "q_room_count_10",
+    "category": "Room Counting",
+    "question": "How many rooms does plan 10 have?",
+    "plan_id": 10,
+    "expected_type": "numeric",
+    "expected_value": 8,
+    "validation_rule": "answer contains '8'"
+  },
+  {
+    "id": "q_room_count_12",
+    "category": "Room Counting",
+    "question": "How many rooms does plan 12 have?",
+    "plan_id": 12,
+    "expected_type": "numeric",
+    "expected_value": 8,
+    "validation_rule": "answer contains '8'"
+  },
+  {
+    "id": "q_door_count_10",
+    "category": "Door Counting",
+    "question": "How many doors does plan 10 have?",
+    "plan_id": 10,
+    "expected_type": "numeric",
+    "expected_value": 9,
+    "validation_rule": "answer contains '9'"
+  },
+  {
+    "id": "q_door_count_12",
+    "category": "Door Counting",
+    "question": "How many doors does plan 12 have?",
+    "plan_id": 12,
+    "expected_type": "numeric",
+    "expected_value": 2,
+    "validation_rule": "answer contains '2'"
+  },
+  {
+    "id": "q_door_count_16",
+    "category": "Door Counting",
+    "question": "How many doors does plan 16 have?",
+    "plan_id": 16,
+    "expected_type": "numeric",
+    "expected_value": 4,
+    "validation_rule": "answer contains '4'"
+  },
+  {
+    "id": "q_missing_window_4",
+    "category": "Window Counting",
+    "question": "Which room in plan 4 has no windows?",
+    "plan_id": 4,
+    "expected_type": "room_list",
+    "expected_value": [
+      "Room 3",
+      "Room 6",
+      "Room 8"
+    ],
+    "validation_rule": "answer contains ['Room 3', 'Room 6', 'Room 8']"
+  },
+  {
+    "id": "q_missing_window_10",
+    "category": "Window Counting",
+    "question": "Which room in plan 10 has no windows?",
+    "plan_id": 10,
+    "expected_type": "room_list",
+    "expected_value": [
+      "Room 8"
+    ],
+    "validation_rule": "answer contains ['Room 8']"
+  },
+  {
+    "id": "q_largest_room_1",
+    "category": "Largest Room Identification",
+    "question": "What is the largest room in plan 1?",
+    "plan_id": 1,
+    "expected_type": "string",
+    "expected_value": "Room 5",
+    "validation_rule": "answer contains 'Room 5'"
+  },
+  {
+    "id": "q_largest_room_10",
+    "category": "Largest Room Identification",
+    "question": "What is the largest room in plan 10?",
+    "plan_id": 10,
+    "expected_type": "string",
+    "expected_value": "Room 5",
+    "validation_rule": "answer contains 'Room 5'"
+  },
+  {
+    "id": "q_room_areas_12",
+    "category": "Room Area Retrieval",
+    "question": "What are the areas of all rooms in plan 12?",
+    "plan_id": 12,
+    "expected_type": "multi_area",
+    "expected_value": "pixel measurements",
+    "validation_rule": "answer contains 'px' and 'Room 1'"
+  },
+  {
+    "id": "q_unavailable_info_general",
+    "category": "Missing Information",
+    "question": "What information is unavailable in this floor plan?",
+    "plan_id": null,
+    "expected_type": "explanation",
+    "expected_value": "limitations explained",
+    "validation_rule": "answer contains 'metric' and 'ceiling'"
+  },
+  {
+    "id": "q_avg_rooms",
+    "category": "Average Calculations",
+    "question": "What is the average number of rooms across all plans?",
+    "plan_id": null,
+    "expected_type": "numeric",
+    "expected_value": 8.02,
+    "validation_rule": "answer contains '8.02'"
+  },
+  {
+    "id": "q_plans_more_than_15_doors",
+    "category": "Plan Comparisons",
+    "question": "Which plans have more than 15 doors?",
+    "plan_id": null,
+    "expected_type": "plans_list",
+    "expected_value": "plans with > 15 doors",
+    "validation_rule": "answer contains 'Plan 20' or 'Plan 30'"
+  },
+  {
+    "id": "q_connections_10",
+    "category": "Room Connectivity",
+    "question": "Which rooms are connected through doors in plan 10?",
+    "plan_id": 10,
+    "expected_type": "connections_list",
+    "expected_value": "door connections",
+    "validation_rule": "answer contains 'Room' and 'Door'"
+  },
+  {
+    "id": "q_invalid_plan_9999",
+    "category": "Invalid Plan IDs",
+    "question": "How many rooms does plan 9999 have?",
+    "plan_id": 9999,
+    "expected_type": "error_handling",
+    "expected_value": "plan not found",
+    "validation_rule": "answer contains 'not found'"
+  },
+  {
+    "id": "q_invalid_plan_500",
+    "category": "Invalid Plan IDs",
+    "question": "What is the largest room in plan 500?",
+    "plan_id": 500,
+    "expected_type": "error_handling",
+    "expected_value": "plan not found",
+    "validation_rule": "answer contains 'not found'"
+  },
+  {
+    "id": "q_unsupported_color",
+    "category": "Unsupported Questions",
+    "question": "What color are the walls painted in plan 12?",
+    "plan_id": null,
+    "expected_type": "rejection",
+    "expected_value": "cannot determine",
+    "validation_rule": "answer contains 'cannot determine' or 'not recorded'"
+  },
+  {
+    "id": "q_unsupported_height",
+    "category": "Unsupported Questions",
+    "question": "What is the ceiling height in plan 1?",
+    "plan_id": null,
+    "expected_type": "rejection",
+    "expected_value": "cannot determine",
+    "validation_rule": "answer contains 'cannot determine' or 'not recorded'"
+  },
+  {
+    "id": "q_unsupported_cost",
+    "category": "Unsupported Questions",
+    "question": "What is the price or construction cost of plan 10?",
+    "plan_id": null,
+    "expected_type": "rejection",
+    "expected_value": "cannot determine",
+    "validation_rule": "answer contains 'cannot determine' or 'not recorded'"
+  },
+  {
+    "id": "q_unsupported_architect",
+    "category": "Unsupported Questions",
+    "question": "Who is the architect of plan 4?",
+    "plan_id": null,
+    "expected_type": "rejection",
+    "expected_value": "cannot determine",
+    "validation_rule": "answer contains 'cannot determine' or 'not recorded'"
+  },
+  {
+    "id": "q_unsupported_sqm",
+    "category": "Unsupported Questions",
+    "question": "What is the room size in square metres for plan 12?",
+    "plan_id": null,
+    "expected_type": "rejection",
+    "expected_value": "cannot determine",
+    "validation_rule": "answer contains 'cannot determine' or 'not recorded'"
+  }
+]

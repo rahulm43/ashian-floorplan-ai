@@ -1,0 +1,237 @@
+{
+  "plan_id": 102,
+  "metadata": {
+    "plan_id": 102,
+    "image_filename": "102.png",
+    "image_path": "C:\\Users\\Lenovo\\.gemini\\antigravity\\scratch\\ashian-floorplan-ai\\dataset\\images\\102.png",
+    "mask_filename": "102 (2).png",
+    "mask_path": "C:\\Users\\Lenovo\\.gemini\\antigravity\\scratch\\ashian-floorplan-ai\\dataset\\masks\\102 (2).png",
+    "width": 5671,
+    "height": 7383,
+    "has_mask": true,
+    "is_valid": true
+  },
+  "rooms": [
+    {
+      "room_id": 102001,
+      "plan_id": 102,
+      "room_index": 1,
+      "category": "Room 1",
+      "area_pixels": 619376,
+      "bbox_x": 2945,
+      "bbox_y": 2697,
+      "bbox_width": 593,
+      "bbox_height": 1447,
+      "centroid_x": 3302.85,
+      "centroid_y": 3389.93,
+      "solidity": 0.837,
+      "confidence": 0.837,
+      "polygon": [
+        [
+          3522,
+          2697
+        ],
+        [
+          3058,
+          2700
+        ],
+        [
+          3065,
+          3372
+        ],
+        [
+          2946,
+          3370
+        ],
+        [
+          2948,
+          3576
+        ],
+        [
+          3168,
+          3580
+        ],
+        [
+          3179,
+          4143
+        ],
+        [
+          3537,
+          4143
+        ]
+      ],
+      "associated_doors": [
+        102001
+      ],
+      "associated_windows": [
+        102001
+      ]
+    },
+    {
+      "room_id": 102002,
+      "plan_id": 102,
+      "room_index": 2,
+      "category": "Room 2",
+      "area_pixels": 653951,
+      "bbox_x": 2151,
+      "bbox_y": 3372,
+      "bbox_width": 776,
+      "bbox_height": 1039,
+      "centroid_x": 2469.75,
+      "centroid_y": 3867.55,
+      "solidity": 0.897,
+      "confidence": 0.897,
+      "polygon": [
+        [
+          2151,
+          3372
+        ],
+        [
+          2151,
+          4410
+        ],
+        [
+          2746,
+          4408
+        ],
+        [
+          2743,
+          3582
+        ],
+        [
+          2926,
+          3581
+        ],
+        [
+          2925,
+          3375
+        ]
+      ],
+      "associated_doors": [
+        102001,
+        102002
+      ],
+      "associated_windows": []
+    },
+    {
+      "room_id": 102003,
+      "plan_id": 102,
+      "room_index": 3,
+      "category": "Room 3",
+      "area_pixels": 248354,
+      "bbox_x": 2770,
+      "bbox_y": 3609,
+      "bbox_width": 372,
+      "bbox_height": 803,
+      "centroid_x": 2932.73,
+      "centroid_y": 4013.89,
+      "solidity": 0.916,
+      "confidence": 0.916,
+      "polygon": [
+        [
+          2773,
+          3609
+        ],
+        [
+          2770,
+          4407
+        ],
+        [
+          3099,
+          4377
+        ],
+        [
+          3141,
+          3898
+        ],
+        [
+          3044,
+          3893
+        ],
+        [
+          3041,
+          3609
+        ]
+      ],
+      "associated_doors": [
+        102002
+      ],
+      "associated_windows": []
+    }
+  ],
+  "doors": [
+    {
+      "door_id": 102001,
+      "plan_id": 102,
+      "door_index": 1,
+      "area_pixels": 3152,
+      "bbox_x": 2926,
+      "bbox_y": 3383,
+      "bbox_width": 18,
+      "bbox_height": 190,
+      "centroid_x": 2934.62,
+      "centroid_y": 3477.89,
+      "associated_rooms": [
+        102001,
+        102002
+      ],
+      "is_exterior": false
+    },
+    {
+      "door_id": 102002,
+      "plan_id": 102,
+      "door_index": 2,
+      "area_pixels": 4746,
+      "bbox_x": 2746,
+      "bbox_y": 4010,
+      "bbox_width": 26,
+      "bbox_height": 188,
+      "centroid_x": 2758.16,
+      "centroid_y": 4103.05,
+      "associated_rooms": [
+        102002,
+        102003
+      ],
+      "is_exterior": false
+    }
+  ],
+  "windows": [
+    {
+      "window_id": 102001,
+      "plan_id": 102,
+      "window_index": 1,
+      "area_pixels": 11088,
+      "bbox_x": 3344,
+      "bbox_y": 4144,
+      "bbox_width": 144,
+      "bbox_height": 77,
+      "centroid_x": 3415.5,
+      "centroid_y": 4182.0,
+      "associated_rooms": [
+        102001
+      ]
+    }
+  ],
+  "walls": {
+    "plan_id": 102,
+    "total_wall_pixels": 330574,
+    "segment_count": 5
+  },
+  "connections": [
+    {
+      "plan_id": 102,
+      "room_a_id": 102001,
+      "room_b_id": 102002,
+      "door_id": 102001,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 102,
+      "room_a_id": 102002,
+      "room_b_id": 102003,
+      "door_id": 102002,
+      "connection_type": "door"
+    }
+  ],
+  "execution_time_ms": 9271.16
+}

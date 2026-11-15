@@ -1,0 +1,32 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs & temp files
+*.log
+temp/
+tmp/
+.streamlit/secrets.toml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+ASHIAN_Submission_Bundle.zip
+
+ASHIAN_Submission_Bundle.zip
+
+dataset/images/[0-9][0-9]*.png
+
+dataset/masks/[0-9][0-9]*.png
+
+outputs/visualizations/

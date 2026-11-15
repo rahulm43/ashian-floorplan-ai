@@ -1,0 +1,1074 @@
+{
+  "plan_id": 21,
+  "metadata": {
+    "plan_id": 21,
+    "image_filename": "21.png",
+    "image_path": "C:\\Users\\Lenovo\\.gemini\\antigravity\\scratch\\ashian-floorplan-ai\\dataset\\images\\21.png",
+    "mask_filename": "21 (2).png",
+    "mask_path": "C:\\Users\\Lenovo\\.gemini\\antigravity\\scratch\\ashian-floorplan-ai\\dataset\\masks\\21 (2).png",
+    "width": 2479,
+    "height": 3508,
+    "has_mask": true,
+    "is_valid": true
+  },
+  "rooms": [
+    {
+      "room_id": 21001,
+      "plan_id": 21,
+      "room_index": 1,
+      "category": "Room 1",
+      "area_pixels": 355831,
+      "bbox_x": 1296,
+      "bbox_y": 1005,
+      "bbox_width": 749,
+      "bbox_height": 488,
+      "centroid_x": 1678.43,
+      "centroid_y": 1250.54,
+      "solidity": 0.99,
+      "confidence": 0.99,
+      "polygon": [
+        [
+          1342,
+          1005
+        ],
+        [
+          1341,
+          1146
+        ],
+        [
+          1296,
+          1146
+        ],
+        [
+          1296,
+          1436
+        ],
+        [
+          1340,
+          1435
+        ],
+        [
+          1340,
+          1491
+        ],
+        [
+          2044,
+          1492
+        ],
+        [
+          2043,
+          1007
+        ]
+      ],
+      "associated_doors": [
+        21001
+      ],
+      "associated_windows": [
+        21001
+      ]
+    },
+    {
+      "room_id": 21002,
+      "plan_id": 21,
+      "room_index": 2,
+      "category": "Room 2",
+      "area_pixels": 64824,
+      "bbox_x": 1323,
+      "bbox_y": 1524,
+      "bbox_width": 210,
+      "bbox_height": 356,
+      "centroid_x": 1440.23,
+      "centroid_y": 1709.47,
+      "solidity": 0.943,
+      "confidence": 0.943,
+      "polygon": [
+        [
+          1532,
+          1524
+        ],
+        [
+          1360,
+          1530
+        ],
+        [
+          1357,
+          1787
+        ],
+        [
+          1323,
+          1789
+        ],
+        [
+          1323,
+          1878
+        ],
+        [
+          1532,
+          1879
+        ]
+      ],
+      "associated_doors": [
+        21001,
+        21002,
+        21005,
+        21006
+      ],
+      "associated_windows": [
+        21002
+      ]
+    },
+    {
+      "room_id": 21003,
+      "plan_id": 21,
+      "room_index": 3,
+      "category": "Room 3",
+      "area_pixels": 172228,
+      "bbox_x": 1543,
+      "bbox_y": 1524,
+      "bbox_width": 485,
+      "bbox_height": 356,
+      "centroid_x": 1784.98,
+      "centroid_y": 1701.53,
+      "solidity": 1.004,
+      "confidence": 1.0,
+      "polygon": [
+        [
+          1543,
+          1525
+        ],
+        [
+          1544,
+          1879
+        ],
+        [
+          2027,
+          1879
+        ],
+        [
+          2026,
+          1524
+        ]
+      ],
+      "associated_doors": [
+        21002,
+        21005
+      ],
+      "associated_windows": [
+        21004
+      ]
+    },
+    {
+      "room_id": 21004,
+      "plan_id": 21,
+      "room_index": 4,
+      "category": "Room 4",
+      "area_pixels": 135725,
+      "bbox_x": 447,
+      "bbox_y": 1671,
+      "bbox_width": 323,
+      "bbox_height": 422,
+      "centroid_x": 607.87,
+      "centroid_y": 1881.64,
+      "solidity": 1.004,
+      "confidence": 1.0,
+      "polygon": [
+        [
+          447,
+          1671
+        ],
+        [
+          447,
+          2090
+        ],
+        [
+          769,
+          2092
+        ],
+        [
+          768,
+          1673
+        ]
+      ],
+      "associated_doors": [
+        21009
+      ],
+      "associated_windows": [
+        21006
+      ]
+    },
+    {
+      "room_id": 21005,
+      "plan_id": 21,
+      "room_index": 5,
+      "category": "Room 5",
+      "area_pixels": 68978,
+      "bbox_x": 785,
+      "bbox_y": 1674,
+      "bbox_width": 287,
+      "bbox_height": 314,
+      "centroid_x": 899.58,
+      "centroid_y": 1815.22,
+      "solidity": 0.877,
+      "confidence": 0.877,
+      "polygon": [
+        [
+          786,
+          1674
+        ],
+        [
+          785,
+          1987
+        ],
+        [
+          972,
+          1986
+        ],
+        [
+          974,
+          1777
+        ],
+        [
+          1071,
+          1773
+        ],
+        [
+          1069,
+          1674
+        ]
+      ],
+      "associated_doors": [
+        21007,
+        21009
+      ],
+      "associated_windows": [
+        21003
+      ]
+    },
+    {
+      "room_id": 21006,
+      "plan_id": 21,
+      "room_index": 6,
+      "category": "Room 6",
+      "area_pixels": 21994,
+      "bbox_x": 991,
+      "bbox_y": 1791,
+      "bbox_width": 185,
+      "bbox_height": 120,
+      "centroid_x": 1082.34,
+      "centroid_y": 1850.7,
+      "solidity": 1.009,
+      "confidence": 1.0,
+      "polygon": [
+        [
+          991,
+          1792
+        ],
+        [
+          991,
+          1910
+        ],
+        [
+          1174,
+          1909
+        ],
+        [
+          1175,
+          1792
+        ]
+      ],
+      "associated_doors": [
+        21004,
+        21007
+      ],
+      "associated_windows": [
+        21005
+      ]
+    },
+    {
+      "room_id": 21007,
+      "plan_id": 21,
+      "room_index": 7,
+      "category": "Room 7",
+      "area_pixels": 23945,
+      "bbox_x": 1186,
+      "bbox_y": 1792,
+      "bbox_width": 124,
+      "bbox_height": 203,
+      "centroid_x": 1246.67,
+      "centroid_y": 1889.93,
+      "solidity": 0.987,
+      "confidence": 0.987,
+      "polygon": [
+        [
+          1186,
+          1792
+        ],
+        [
+          1186,
+          1988
+        ],
+        [
+          1306,
+          1994
+        ],
+        [
+          1307,
+          1793
+        ]
+      ],
+      "associated_doors": [
+        21003,
+        21004,
+        21006,
+        21008
+      ],
+      "associated_windows": []
+    },
+    {
+      "room_id": 21008,
+      "plan_id": 21,
+      "room_index": 8,
+      "category": "Room 8",
+      "area_pixels": 409605,
+      "bbox_x": 1317,
+      "bbox_y": 1895,
+      "bbox_width": 711,
+      "bbox_height": 582,
+      "centroid_x": 1674.05,
+      "centroid_y": 2186.15,
+      "solidity": 1.0,
+      "confidence": 1.0,
+      "polygon": [
+        [
+          1326,
+          1898
+        ],
+        [
+          1317,
+          2476
+        ],
+        [
+          2027,
+          2474
+        ],
+        [
+          2026,
+          1895
+        ]
+      ],
+      "associated_doors": [
+        21005,
+        21006
+      ],
+      "associated_windows": [
+        21007,
+        21010
+      ]
+    },
+    {
+      "room_id": 21009,
+      "plan_id": 21,
+      "room_index": 9,
+      "category": "Room 9",
+      "area_pixels": 63334,
+      "bbox_x": 784,
+      "bbox_y": 1925,
+      "bbox_width": 523,
+      "bbox_height": 174,
+      "centroid_x": 1052.98,
+      "centroid_y": 2030.76,
+      "solidity": 0.831,
+      "confidence": 0.831,
+      "polygon": [
+        [
+          784,
+          2006
+        ],
+        [
+          784,
+          2095
+        ],
+        [
+          1306,
+          2098
+        ],
+        [
+          1306,
+          2004
+        ],
+        [
+          1183,
+          2007
+        ],
+        [
+          1170,
+          1925
+        ],
+        [
+          991,
+          1925
+        ],
+        [
+          990,
+          2001
+        ]
+      ],
+      "associated_doors": [
+        21006,
+        21007,
+        21008,
+        21009,
+        21010,
+        21011
+      ],
+      "associated_windows": []
+    },
+    {
+      "room_id": 21010,
+      "plan_id": 21,
+      "room_index": 10,
+      "category": "Room 10",
+      "area_pixels": 157008,
+      "bbox_x": 449,
+      "bbox_y": 2108,
+      "bbox_width": 426,
+      "bbox_height": 369,
+      "centroid_x": 661.29,
+      "centroid_y": 2292.18,
+      "solidity": 1.004,
+      "confidence": 1.0,
+      "polygon": [
+        [
+          449,
+          2108
+        ],
+        [
+          450,
+          2476
+        ],
+        [
+          874,
+          2476
+        ],
+        [
+          873,
+          2109
+        ]
+      ],
+      "associated_doors": [
+        21009,
+        21010
+      ],
+      "associated_windows": [
+        21008
+      ]
+    },
+    {
+      "room_id": 21011,
+      "plan_id": 21,
+      "room_index": 11,
+      "category": "Room 11",
+      "area_pixels": 149361,
+      "bbox_x": 891,
+      "bbox_y": 2111,
+      "bbox_width": 409,
+      "bbox_height": 366,
+      "centroid_x": 1095.2,
+      "centroid_y": 2293.89,
+      "solidity": 1.004,
+      "confidence": 1.0,
+      "polygon": [
+        [
+          1299,
+          2111
+        ],
+        [
+          892,
+          2113
+        ],
+        [
+          891,
+          2476
+        ],
+        [
+          1298,
+          2476
+        ]
+      ],
+      "associated_doors": [
+        21006,
+        21010,
+        21011
+      ],
+      "associated_windows": [
+        21009
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "door_id": 21001,
+      "plan_id": 21,
+      "door_index": 1,
+      "area_pixels": 2898,
+      "bbox_x": 1358,
+      "bbox_y": 1498,
+      "bbox_width": 99,
+      "bbox_height": 31,
+      "centroid_x": 1405.45,
+      "centroid_y": 1512.57,
+      "associated_rooms": [
+        21001,
+        21002
+      ],
+      "is_exterior": false
+    },
+    {
+      "door_id": 21002,
+      "plan_id": 21,
+      "door_index": 2,
+      "area_pixels": 937,
+      "bbox_x": 1533,
+      "bbox_y": 1641,
+      "bbox_width": 10,
+      "bbox_height": 94,
+      "centroid_x": 1537.5,
+      "centroid_y": 1687.65,
+      "associated_rooms": [
+        21002,
+        21003
+      ],
+      "is_exterior": false
+    },
+    {
+      "door_id": 21003,
+      "plan_id": 21,
+      "door_index": 3,
+      "area_pixels": 5244,
+      "bbox_x": 1194,
+      "bbox_y": 1742,
+      "bbox_width": 105,
+      "bbox_height": 50,
+      "centroid_x": 1246.06,
+      "centroid_y": 1766.53,
+      "associated_rooms": [
+        21007
+      ],
+      "is_exterior": true
+    },
+    {
+      "door_id": 21004,
+      "plan_id": 21,
+      "door_index": 4,
+      "area_pixels": 935,
+      "bbox_x": 1175,
+      "bbox_y": 1810,
+      "bbox_width": 11,
+      "bbox_height": 98,
+      "centroid_x": 1180.35,
+      "centroid_y": 1858.83,
+      "associated_rooms": [
+        21006,
+        21007
+      ],
+      "is_exterior": false
+    },
+    {
+      "door_id": 21005,
+      "plan_id": 21,
+      "door_index": 5,
+      "area_pixels": 7370,
+      "bbox_x": 1542,
+      "bbox_y": 1880,
+      "bbox_width": 486,
+      "bbox_height": 16,
+      "centroid_x": 1782.24,
+      "centroid_y": 1887.09,
+      "associated_rooms": [
+        21002,
+        21003,
+        21008
+      ],
+      "is_exterior": false
+    },
+    {
+      "door_id": 21006,
+      "plan_id": 21,
+      "door_index": 6,
+      "area_pixels": 3672,
+      "bbox_x": 1307,
+      "bbox_y": 1885,
+      "bbox_width": 17,
+      "bbox_height": 216,
+      "centroid_x": 1315.0,
+      "centroid_y": 1992.5,
+      "associated_rooms": [
+        21002,
+        21007,
+        21008,
+        21009,
+        21011
+      ],
+      "is_exterior": false
+    },
+    {
+      "door_id": 21007,
+      "plan_id": 21,
+      "door_index": 7,
+      "area_pixels": 1559,
+      "bbox_x": 883,
+      "bbox_y": 1902,
+      "bbox_width": 96,
+      "bbox_height": 100,
+      "centroid_x": 939.07,
+      "centroid_y": 1984.12,
+      "associated_rooms": [
+        21005,
+        21006,
+        21009
+      ],
+      "is_exterior": false
+    },
+    {
+      "door_id": 21008,
+      "plan_id": 21,
+      "door_index": 8,
+      "area_pixels": 2142,
+      "bbox_x": 1183,
+      "bbox_y": 1989,
+      "bbox_width": 119,
+      "bbox_height": 18,
+      "centroid_x": 1242.0,
+      "centroid_y": 1997.5,
+      "associated_rooms": [
+        21007,
+        21009
+      ],
+      "is_exterior": false
+    },
+    {
+      "door_id": 21009,
+      "plan_id": 21,
+      "door_index": 9,
+      "area_pixels": 1594,
+      "bbox_x": 682,
+      "bbox_y": 2001,
+      "bbox_width": 100,
+      "bbox_height": 97,
+      "centroid_x": 761.88,
+      "centroid_y": 2061.76,
+      "associated_rooms": [
+        21004,
+        21005,
+        21009,
+        21010
+      ],
+      "is_exterior": false
+    },
+    {
+      "door_id": 21010,
+      "plan_id": 21,
+      "door_index": 10,
+      "area_pixels": 1025,
+      "bbox_x": 783,
+      "bbox_y": 2101,
+      "bbox_width": 97,
+      "bbox_height": 77,
+      "centroid_x": 845.61,
+      "centroid_y": 2115.95,
+      "associated_rooms": [
+        21009,
+        21010,
+        21011
+      ],
+      "is_exterior": false
+    },
+    {
+      "door_id": 21011,
+      "plan_id": 21,
+      "door_index": 11,
+      "area_pixels": 1066,
+      "bbox_x": 978,
+      "bbox_y": 2100,
+      "bbox_width": 98,
+      "bbox_height": 12,
+      "centroid_x": 1028.27,
+      "centroid_y": 2105.97,
+      "associated_rooms": [
+        21009,
+        21011
+      ],
+      "is_exterior": false
+    }
+  ],
+  "windows": [
+    {
+      "window_id": 21001,
+      "plan_id": 21,
+      "window_index": 1,
+      "area_pixels": 2499,
+      "bbox_x": 2045,
+      "bbox_y": 1338,
+      "bbox_width": 35,
+      "bbox_height": 73,
+      "centroid_x": 2061.89,
+      "centroid_y": 1373.21,
+      "associated_rooms": [
+        21001
+      ]
+    },
+    {
+      "window_id": 21002,
+      "plan_id": 21,
+      "window_index": 2,
+      "area_pixels": 3497,
+      "bbox_x": 1307,
+      "bbox_y": 1581,
+      "bbox_width": 50,
+      "bbox_height": 73,
+      "centroid_x": 1331.5,
+      "centroid_y": 1616.55,
+      "associated_rooms": [
+        21002
+      ]
+    },
+    {
+      "window_id": 21003,
+      "plan_id": 21,
+      "window_index": 3,
+      "area_pixels": 3466,
+      "bbox_x": 913,
+      "bbox_y": 1623,
+      "bbox_width": 70,
+      "bbox_height": 51,
+      "centroid_x": 946.73,
+      "centroid_y": 1647.6,
+      "associated_rooms": [
+        21005
+      ]
+    },
+    {
+      "window_id": 21004,
+      "plan_id": 21,
+      "window_index": 4,
+      "area_pixels": 7365,
+      "bbox_x": 2027,
+      "bbox_y": 1675,
+      "bbox_width": 54,
+      "bbox_height": 142,
+      "centroid_x": 2053.3,
+      "centroid_y": 1745.23,
+      "associated_rooms": [
+        21003
+      ]
+    },
+    {
+      "window_id": 21005,
+      "plan_id": 21,
+      "window_index": 5,
+      "area_pixels": 2371,
+      "bbox_x": 1124,
+      "bbox_y": 1739,
+      "bbox_width": 47,
+      "bbox_height": 52,
+      "centroid_x": 1147.37,
+      "centroid_y": 1764.69,
+      "associated_rooms": [
+        21006
+      ]
+    },
+    {
+      "window_id": 21006,
+      "plan_id": 21,
+      "window_index": 6,
+      "area_pixels": 7049,
+      "bbox_x": 398,
+      "bbox_y": 1802,
+      "bbox_width": 49,
+      "bbox_height": 146,
+      "centroid_x": 422.09,
+      "centroid_y": 1874.39,
+      "associated_rooms": [
+        21004
+      ]
+    },
+    {
+      "window_id": 21007,
+      "plan_id": 21,
+      "window_index": 7,
+      "area_pixels": 7018,
+      "bbox_x": 2028,
+      "bbox_y": 2132,
+      "bbox_width": 52,
+      "bbox_height": 139,
+      "centroid_x": 2053.06,
+      "centroid_y": 2200.95,
+      "associated_rooms": [
+        21008
+      ]
+    },
+    {
+      "window_id": 21008,
+      "plan_id": 21,
+      "window_index": 8,
+      "area_pixels": 7282,
+      "bbox_x": 591,
+      "bbox_y": 2477,
+      "bbox_width": 144,
+      "bbox_height": 51,
+      "centroid_x": 661.89,
+      "centroid_y": 2501.94,
+      "associated_rooms": [
+        21010
+      ]
+    },
+    {
+      "window_id": 21009,
+      "plan_id": 21,
+      "window_index": 9,
+      "area_pixels": 7462,
+      "bbox_x": 1033,
+      "bbox_y": 2477,
+      "bbox_width": 144,
+      "bbox_height": 53,
+      "centroid_x": 1105.25,
+      "centroid_y": 2502.71,
+      "associated_rooms": [
+        21011
+      ]
+    },
+    {
+      "window_id": 21010,
+      "plan_id": 21,
+      "window_index": 10,
+      "area_pixels": 9963,
+      "bbox_x": 1600,
+      "bbox_y": 2480,
+      "bbox_width": 213,
+      "bbox_height": 47,
+      "centroid_x": 1706.49,
+      "centroid_y": 2503.04,
+      "associated_rooms": [
+        21008
+      ]
+    }
+  ],
+  "walls": {
+    "plan_id": 21,
+    "total_wall_pixels": 228913,
+    "segment_count": 16
+  },
+  "connections": [
+    {
+      "plan_id": 21,
+      "room_a_id": 21001,
+      "room_b_id": 21002,
+      "door_id": 21001,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21002,
+      "room_b_id": 21003,
+      "door_id": 21002,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21006,
+      "room_b_id": 21007,
+      "door_id": 21004,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21002,
+      "room_b_id": 21003,
+      "door_id": 21005,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21002,
+      "room_b_id": 21008,
+      "door_id": 21005,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21003,
+      "room_b_id": 21008,
+      "door_id": 21005,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21002,
+      "room_b_id": 21007,
+      "door_id": 21006,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21002,
+      "room_b_id": 21008,
+      "door_id": 21006,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21002,
+      "room_b_id": 21009,
+      "door_id": 21006,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21002,
+      "room_b_id": 21011,
+      "door_id": 21006,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21007,
+      "room_b_id": 21008,
+      "door_id": 21006,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21007,
+      "room_b_id": 21009,
+      "door_id": 21006,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21007,
+      "room_b_id": 21011,
+      "door_id": 21006,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21008,
+      "room_b_id": 21009,
+      "door_id": 21006,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21008,
+      "room_b_id": 21011,
+      "door_id": 21006,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21009,
+      "room_b_id": 21011,
+      "door_id": 21006,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21005,
+      "room_b_id": 21006,
+      "door_id": 21007,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21005,
+      "room_b_id": 21009,
+      "door_id": 21007,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21006,
+      "room_b_id": 21009,
+      "door_id": 21007,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21007,
+      "room_b_id": 21009,
+      "door_id": 21008,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21004,
+      "room_b_id": 21005,
+      "door_id": 21009,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21004,
+      "room_b_id": 21009,
+      "door_id": 21009,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21004,
+      "room_b_id": 21010,
+      "door_id": 21009,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21005,
+      "room_b_id": 21009,
+      "door_id": 21009,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21005,
+      "room_b_id": 21010,
+      "door_id": 21009,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21009,
+      "room_b_id": 21010,
+      "door_id": 21009,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21009,
+      "room_b_id": 21010,
+      "door_id": 21010,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21009,
+      "room_b_id": 21011,
+      "door_id": 21010,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21010,
+      "room_b_id": 21011,
+      "door_id": 21010,
+      "connection_type": "door"
+    },
+    {
+      "plan_id": 21,
+      "room_a_id": 21009,
+      "room_b_id": 21011,
+      "door_id": 21011,
+      "connection_type": "door"
+    }
+  ],
+  "execution_time_ms": 2673.82
+}
